@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_test_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Тест"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_primary"/>
+
+        <TextView
+            android:id="@+id/tv_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⏱ 20с"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_primary"/>
+    </LinearLayout>
+
+    <!-- Progress -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:progressTint="@color/blue_primary"
+        android:progressBackgroundTint="@color/gray_light"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="space_between"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_question_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Вопрос 1 из 10"
+            android:textSize="14sp"
+            android:textColor="@color/gray_text"/>
+
+        <TextView
+            android:id="@+id/tv_current_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Очки: 0"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/green_score"/>
+    </LinearLayout>
+
+    <!-- Question Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Вопрос"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"
+            android:gravity="center"
+            android:padding="20dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Answer Buttons -->
+    <Button
+        android:id="@+id/btn_answer1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Ответ 1"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/dark_text"
+        android:elevation="2dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <Button
+        android:id="@+id/btn_answer2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Ответ 2"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/dark_text"
+        android:elevation="2dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <Button
+        android:id="@+id/btn_answer3"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Ответ 3"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/dark_text"
+        android:elevation="2dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    <Button
+        android:id="@+id/btn_answer4"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Ответ 4"
+        android:textSize="15sp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="@color/dark_text"
+        android:elevation="2dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+</LinearLayout>

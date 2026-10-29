@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tv_result_emoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏆"
+        android:textSize="80sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Тест завершён!"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_text"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_result_test_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Название теста"
+        android:textSize="18sp"
+        android:textColor="@color/blue_primary"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_result_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="80 / 100 очков"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_primary"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_result_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Правильных ответов: 8 из 10"
+                android:textSize="16sp"
+                android:textColor="@color/gray_text"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_result_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Отлично! Ты молодец!"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_back_to_main"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="На главную"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/blue_primary"
+        style="@style/Widget.MaterialComponents.Button"/>
+
+</LinearLayout>
